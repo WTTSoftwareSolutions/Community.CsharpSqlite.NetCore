@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Community.CsharpSqlite.NetCore</name>
+    </assembly>
+    <members>
+        <member name="M:Community.CsharpSqlite.Sqlite3.codec_free(System.Byte[]@,System.Int32)">
+            Free and wipe memory
+            If ptr is not null memory will be freed.
+            If sz is greater than zero, the memory will be overwritten with zero before it is freed
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.cipher_ctx_set_pass(Community.CsharpSqlite.Sqlite3.cipher_ctx,System.String,System.Int32)">
+             Set the raw password / key data for a cipher context
+            
+             returns SQLITE_OK if assignment was successfull
+             returns SQLITE_NOMEM if an error occured allocating memory
+             returns SQLITE_ERROR if the key couldn't be set because the pass was null or size was zero
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.cipher_ctx_init(Community.CsharpSqlite.Sqlite3.cipher_ctx@)">
+             Initialize a new cipher_ctx struct. This function will allocate memory
+             for the cipher context and for the key
+            
+             returns SQLITE_OK if initialization was successful
+             returns SQLITE_NOMEM if an error occured allocating memory
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.cipher_ctx_free(Community.CsharpSqlite.Sqlite3.cipher_ctx@)">
+            free and wipe memory associated with a cipher_ctx
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.cipher_ctx_copy(Community.CsharpSqlite.Sqlite3.cipher_ctx,Community.CsharpSqlite.Sqlite3.cipher_ctx)">
+             Copy one cipher_ctx to another. For instance, assuming that read_ctx is a
+             fully initialized context, you could copy it to write_ctx and all yet data
+             and pass information across
+            
+             returns SQLITE_OK if initialization was successful
+             returns SQLITE_NOMEM if an error occured allocating memory
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.cipher_ctx_cmp(Community.CsharpSqlite.Sqlite3.cipher_ctx,Community.CsharpSqlite.Sqlite3.cipher_ctx)">
+             Compare one cipher_ctx to another.
+            
+             returns 0 if all the parameters (except the derived key data) are the same
+             returns 1 otherwise
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.codec_ctx_free(Community.CsharpSqlite.Sqlite3.codec_ctx@)">
+            Free and wipe memory associated with a cipher_ctx, including the allocated
+            read_ctx and write_ctx.
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.codec_key_derive(Community.CsharpSqlite.Sqlite3.codec_ctx,Community.CsharpSqlite.Sqlite3.cipher_ctx)">
+             Derive an encryption key for a cipher contex key based on the raw password.
+            
+             If the raw key data is formated as x'hex' and there are exactly enough hex chars to fill
+             the key space (i.e 64 hex chars for a 256 bit key) then the key data will be used directly.
+            
+             Otherwise, a key data will be derived using PBKDF2
+            
+             returns SQLITE_OK if initialization was successful
+             returns SQLITE_NOMEM if the key could't be derived (for instance if pass is null or pass_sz is 0)
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.codec_set_cipher_name(Community.CsharpSqlite.Sqlite3.sqlite3,System.Int32,System.String,System.Int32)">
+            
+             when for_ctx == 0 then it will change for read
+             when for_ctx == 1 then it will change for write
+             when for_ctx == 2 then it will change for both
+        </member>
+        <member name="T:Community.CsharpSqlite.Sqlite3.LockingStrategy">
+            <summary>
+            Basic locking strategy for Console/Winform applications
+            </summary>
+        </member>
+        <member name="T:Community.CsharpSqlite.Sqlite3.MediumTrustLockingStrategy">
+            <summary>
+            Locking strategy for Medium Trust. It uses the same trick used in the native code for WIN_CE
+            which doesn't support LockFileEx as well.
+            </summary>
+        </member>
+        <member name="F:Community.CsharpSqlite.Sqlite3.etRADIX">
+            * The rest are extensions, not normally found in printf() */
+        </member>
+        <member name="F:Community.CsharpSqlite.Sqlite3.SQLITE_OK">
+            * beginning-of-error-codes */
+        </member>
+        <member name="F:Community.CsharpSqlite.Sqlite3.SQLITE_CONFIG_SINGLETHREAD">
+            * previously SQLITE_CONFIG_CHUNKALLOC 12 which is now unused. */ 
+        </member>
+        <member name="T:Community.CsharpSqlite.Sqlite3.sqlite3_module">
+            * The methods above are in version 1 of the sqlite_module object. Those 
+        </member>
+        <member name="M:Community.CsharpSqlite.Sqlite3.sqlite3GetToken(System.String,System.Int32,System.Int32@)">
+            * x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xA xB xC xD xE xF */
+        </member>
+    </members>
+</doc>

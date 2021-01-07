@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.CsharpSqlite.NetCore", "Community.CsharpSqlite.NetCore\Community.CsharpSqlite.NetCore.csproj", "{438816BE-A3BD-4CD9-8297-28B0625B03CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.CsharpSqlite.shell.NetCore", "Community.CsharpSqlite.shell.NetCore\Community.CsharpSqlite.shell.NetCore.csproj", "{93446121-56D5-4BC9-B138-3205382503ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Community.CsharpSqlite.SQLiteClient.NetCore", "Community.CsharpSqlite.SQLiteClient.NetCore\Community.CsharpSqlite.SQLiteClient.NetCore.csproj", "{4FE69B17-C7EF-42CE-A10D-AD872827C9BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{438816BE-A3BD-4CD9-8297-28B0625B03CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438816BE-A3BD-4CD9-8297-28B0625B03CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438816BE-A3BD-4CD9-8297-28B0625B03CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438816BE-A3BD-4CD9-8297-28B0625B03CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93446121-56D5-4BC9-B138-3205382503ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93446121-56D5-4BC9-B138-3205382503ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93446121-56D5-4BC9-B138-3205382503ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93446121-56D5-4BC9-B138-3205382503ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE69B17-C7EF-42CE-A10D-AD872827C9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE69B17-C7EF-42CE-A10D-AD872827C9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE69B17-C7EF-42CE-A10D-AD872827C9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE69B17-C7EF-42CE-A10D-AD872827C9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C5324FE-473D-4609-B8CE-DF895D84D1A4}
+	EndGlobalSection
+EndGlobal

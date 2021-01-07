@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Community.CsharpSqlite.shell.NetCore</name>
+    </assembly>
+    <members>
+        <member name="M:Shell.readline(System.String)">
+            * This needs to come before any includes for MSVC compiler */
+        </member>
+    </members>
+</doc>
