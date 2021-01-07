@@ -11,8 +11,4 @@
     <DocumentationFile>C:\Development\Projects\csharp-sqlite\Community.CsharpSqlite.NetCore\Community.CsharpSqlite.NetCore.xml</DocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Management" Version="5.0.0" />
-  </ItemGroup>
-
 </Project>
